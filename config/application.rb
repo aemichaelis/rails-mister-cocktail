@@ -33,3 +33,34 @@ module RailsMisterCocktail
     config.generators.system_tests = nil
   end
 end
+
+# rails generate model Ingredients name:string
+
+# rails generate model Doses description:string cocktail_id:integer ingredient_id:integer
+
+# rails generate model Cocktail name:text
+
+
+
+# class Ingredient < ApplicationRecord
+#   validates :name, presence: true, uniqueness: true
+
+#   has_many :doses
+#   has_many :cocktails, through: :doses
+# end
+
+# class Dose < ApplicationRecord
+#   belongs_to :cocktail
+#   belongs_to :ingredient
+
+#   validates :description, presence: true
+#   validates :cocktail_id, uniqueness: { scope: :ingredient_id }
+# end
+
+# # class Cocktail < ApplicationRecord
+#   has_many :doses, dependent: :destroy
+#   has_many :ingredients, through: :doses
+
+#   validates :name, presence: true, uniqueness: true
+# end
+
