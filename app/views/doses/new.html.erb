@@ -1,0 +1,14 @@
+<div class ="container padded">
+  <div class="card" style="width: 320px;>
+    <div class="card-body">
+        <h5 class="card-title">Add new cocktail recipes</h5>
+        <p class="card-text">Just add your favourite cocktails to the list.</p>
+          <%= simple_form_for @cocktail do |f| %>
+            <%= f.input :name, placeholder: 'Zombie'%>
+            <%= f.submit "Submit", class: "btn btn-primary" %>
+          <% end %>
+        <%= link_to "Back", cocktails_path, class: "btn btn-warning btn-sm" %>
+      </div>
+    </div>
+  </div>
+

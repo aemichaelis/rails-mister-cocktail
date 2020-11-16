@@ -1,0 +1,17 @@
+<div classS="container padded">
+  <div class="card" style="width: 320px;>
+    <div class="row">
+      <div class="card-body">
+        <h5 class="card-title">Add an ingridient</h5>
+        <p class="card-text">Just add your favourite cocktails to the list.</p>
+          <%= simple_form_for(@cocktail) do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :name %>
+            <%= f.button :submit, class: "btn btn-primary" %>
+          <% end %>
+        <%= link_to "Back", cocktails_path, class: "btn btn-warning btn-sm" %>
+      </div>
+    </div>
+  </div>
+</div>
+

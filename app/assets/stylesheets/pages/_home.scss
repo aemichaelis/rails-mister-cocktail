@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+
+body {
+      background-color:#EAEAF4;
+      background-repeat: repeat;
+      background-position: top;
+      color:#070707;
+}
+
+@font-face {
+  font-family:'icofonts';
+  src:font-url('icofonts.eot');
+  src:font-url('icofonts.eot?#iefix') format('embedded-opentype')
+}
+
+
